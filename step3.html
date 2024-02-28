@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="image-box">
+        <div class="circle">
+            <p class="circle_non">1</p>
+            <p class="circle_non">2</p>
+            <p class="circle_curr">3</p>
+            <p class="circle_non">4</p>
+
+        </div> 
+        <div class="in_circle_1">
+            <p style="margin-top: 40px;margin-left: -56px;">STEP 1</p>
+            <P style="font-weight: 600;margin-left: -56px;margin-top: -10px;">YOUR INFO</P>
+            <p style="margin-left: -56px;">STEP 2</p>
+            <P style="font-weight: 600;margin-left: -56px;margin-top: -10px;">SELECT PLAN</P>
+            <p style="margin-left: -56px;">STEP 3</p>
+            <P style="font-weight: 600;margin-left: -56px;margin-top: -10px;">ADD-ONS</P>
+            <p style="margin-left: -56px;">STEP 4</p>
+            <P style="font-weight: 600;margin-left: -56px;margin-top: -10px;">SUMMARY</P>
+            
+
+            
+        </div>
+      
+    </div>
+
+    <form id="myForm" >
+        <h1>Pick add-ons</h1>
+        <p>add-ons help enhance your gaming experience</p><br>
+        <div class="add-ons">
+            <div class="check">
+                <input type="checkbox" name="checkbox1">
+                
+            </div>
+            <div>
+                <p style="font-weight: 700;">Online service</p>
+            <p style="margin-top: -10px;color: rgb(129, 124, 117);">Access to multiplayer games</p>
+
+            </div>
+            <div class="check">
+                <p>+$10/yr</p>
+            </div>
+
+        </div>
+        <div class="add-ons">
+            <div class="check">
+                <input type="checkbox" name="checkbox1">
+                
+            </div>
+            <div>
+                <p style="font-weight: 700;">Larger storage</p>
+            <p style="margin-top: -10px;color: rgb(129, 124, 117);">Extra 1TB cloud save</p>
+
+
+            </div>
+            <div class="check">
+                <p>+$20/yr</p>
+            </div>
+
+        </div><div class="add-ons">
+            <div class="check">
+                <input type="checkbox" name="checkbox1">
+                
+            </div>
+            <div>
+                <p style="font-weight: 700;">Customizable profile</p>
+            <p style="margin-top: -10px;color: rgb(129, 124, 117);">Custom theme on your profile</p>
+
+            </div>
+            <div class="check">
+                <p>+$20/yr</p>
+            </div>
+
+        </div>
+
+        
+        <div class="btn-box-1">
+            <button type="button" id="back">back</button>  
+          <button type="button" id="next">Next Step</button>
+
+        </div>
+      
+    </form>
+    </div>
+  </div>
+  <script>
+    var back=document.getElementById("back");
+    var next=document.getElementById("next");
+
+    back.onclick = function() {
+      window.location.href = "step2.html";
+    }
+    next.onclick = function() {
+      window.location.href = "step4.html";
+    }
+  </script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

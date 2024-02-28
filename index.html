@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="image-box">
+        <div class="circle">
+            <p class="circle_curr">1</p>
+            <p class="circle_non">2</p>
+            <p class="circle_non">3</p>
+            <p class="circle_non">4</p>
+
+        </div> 
+        <div class="in_circle_1">
+            <p style="margin-top: 40px;margin-left: -56px;">STEP 1</p>
+            <P style="font-weight: 600;margin-left: -56px;margin-top: -10px;">YOUR INFO</P>
+            <p style="margin-left: -56px;">STEP 2</p>
+            <P style="font-weight: 600;margin-left: -56px;margin-top: -10px;">SELECT PLAN</P>
+            <p style="margin-left: -56px;">STEP 3</p>
+            <P style="font-weight: 600;margin-left: -56px;margin-top: -10px;">ADD-ONS</P>
+            <p style="margin-left: -56px;">STEP 4</p>
+            <P style="font-weight: 600;margin-left: -56px;margin-top: -10px;">SUMMARY</P>
+            
+
+            
+        </div>
+      
+    </div>
+
+    <form id="myForm" >
+        <h1>Personal info</h1>
+        <p>please provide your name,email address, and phone number.</p><br>
+        <label for="name">Name</label><br>
+        <input type="text" placeholder="e.g. Stephen King">
+        <label for="email">Email Address</label><br>
+        <input type="email" placeholder="e.g. stephenking@lorem.com">
+        <label for="phonenumber">Phone Number</label><br>
+        <input type="text" placeholder="e.g. +1 234 567 890"><br>
+        <div class="btn-box" id="next">
+          <button type="button">Next step</button>
+
+        </div>
+      
+    </form>
+    </div>
+  </div>
+  <script>
+    var form1=document.getElementById("next");
+
+    form1.onclick = function() {
+      window.location.href = "step2.html";
+    }
+  </script>
+  
+</body>
+</html>
